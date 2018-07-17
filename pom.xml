@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>21.0.0</version>
+	</parent>
+
+	<groupId>sc.fiji</groupId>
+	<artifactId>ellipsoid-projection</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
+
+	<name>Ellipsoid Surface Projection</name>
+	<description>Fit ellipsoid surface to spots and project onto sphere or cylinder</description>
+	<url>https://git.mpi-cbg.de/tomancaklab/ellipsoid-projection</url>
+	<inceptionYear>2016</inceptionYear>
+	<organization>
+		<name>MPI-CBG</name>
+		<url>https://www.mpi-cbg.de</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<dependencies>
+		<dependency>
+			<groupId>sc.fiji</groupId>
+			<artifactId>bigdataviewer-core</artifactId>
+			<version>5.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>sc.fiji</groupId>
+			<artifactId>bigdataviewer_fiji</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-ij</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-realtransform</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-algorithm</artifactId>
+		</dependency>
+	</dependencies>
+
+	<developers>
+		<developer>
+			<id>tpietzsch</id>
+			<name>Tobias Pietzsch</name>
+			<email>pietzsch@mpi-cbg.de</email>
+			<url></url>
+			<organization>MPI-CBG</organization>
+			<organizationUrl>http://www.mpi-cbg.de/</organizationUrl>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<properties>
+		<package-name>de.mpicbg.ovaries</package-name>
+
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.projectName>Ellipsoid Surface Projection</license.projectName>
+		<license.organizationName>Tomancak lab, MPI-CBG</license.organizationName>
+		<license.copyrightOwners>Tobias Pietzsch</license.copyrightOwners>
+	</properties>
+
+	<mailingLists><mailingList><name>none</name></mailingList></mailingLists>
+	<scm><tag>none</tag></scm>
+	<issueManagement><system>none</system></issueManagement>
+	<ciManagement><system>none</system></ciManagement>
+	<contributors><contributor><name>none</name></contributor></contributors>
+</project>
